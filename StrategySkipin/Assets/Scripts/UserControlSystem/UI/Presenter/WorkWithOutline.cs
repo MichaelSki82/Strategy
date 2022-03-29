@@ -10,7 +10,6 @@ public class WorkWithOutline : MonoBehaviour
     private void OnEnable()
     {
         _outline = GetComponent<Outline>();
-        Debug.Log("close outline");
         _outline.OutlineWidth = 0;
 
     }

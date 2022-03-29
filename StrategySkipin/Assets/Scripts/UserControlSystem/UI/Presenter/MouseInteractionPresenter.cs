@@ -1,12 +1,14 @@
 ﻿using System.Linq;
 using Abstractions;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UserControlSystem;
 
 public sealed class MouseInteractionPresenter : MonoBehaviour
 {
     [SerializeField] private Camera _camera;
     [SerializeField] private SelectableValue _selectedObject;
+    [SerializeField] private EventSystem _eventSystem;
     private WorkWithOutline curentWorkWithOutline;
 
     private void Update()
@@ -18,7 +20,7 @@ public sealed class MouseInteractionPresenter : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, 100))
             {
-                Debug.Log(hit.collider.gameObject);
+                
                 var workWithOutline = hit.collider.GetComponent<WorkWithOutline>();
                 if (workWithOutline != null)
                 {
@@ -37,6 +39,10 @@ public sealed class MouseInteractionPresenter : MonoBehaviour
             }
         }
 
+        if (_eventSystem.IsPointerOverGameObject())
+        {
+            return;
+        }
 
         if (!Input.GetMouseButtonUp(0))
         {

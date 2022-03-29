@@ -56,9 +56,7 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
-    <Compile Include="Assets\QuickOutline\Scripts\WorkWithOutline.cs" />
-    <Compile Include="Assets\QuickOutline\Scripts\OutlinePresenter.cs" />
+    <Compile Include="Assets\Scripts\Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -711,6 +709,10 @@
       <Project>{648F8A40-8715-264B-C1D7-900D32AE677A}</Project>
       <Name>Abstractions</Name>
     </ProjectReference>
+    <ProjectReference Include="UserControlSystem.csproj">
+      <Project>{A6F09443-7B70-9D54-1EC6-F248453560D0}</Project>
+      <Name>UserControlSystem</Name>
+    </ProjectReference>
     <ProjectReference Include="Presenter.csproj">
       <Project>{967CF290-D425-2EEB-FA4E-8826FEAF9825}</Project>
       <Name>Presenter</Name>
@@ -722,6 +724,10 @@
     <ProjectReference Include="Model.csproj">
       <Project>{5F7D3B7D-FACE-40B2-EC74-827148636838}</Project>
       <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="View.csproj">
+      <Project>{C4AAA381-4B81-4530-F273-867E09F4FCE9}</Project>
+      <Name>View</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

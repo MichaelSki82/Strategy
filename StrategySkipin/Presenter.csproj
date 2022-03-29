@@ -56,10 +56,12 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\UserControlSystem\UI\Presenter\MouseInteractionPresenter.cs" />
-    <Compile Include="Assets\Scripts\UserControlSystem\UI\Presenter\BottomLeftPresenter.cs" />
     <Compile Include="Assets\Scripts\UserControlSystem\UI\Presenter\Outline.cs" />
+    <Compile Include="Assets\Scripts\UserControlSystem\UI\Presenter\MouseInteractionPresenter.cs" />
+    <Compile Include="Assets\Scripts\UserControlSystem\UI\Presenter\CommandButtonsPresenter.cs" />
+    <Compile Include="Assets\Scripts\UserControlSystem\UI\Presenter\BottomLeftPresenter.cs" />
     <Compile Include="Assets\Scripts\UserControlSystem\UI\Presenter\WorkWithOutline.cs" />
+    <Compile Include="Assets\Scripts\UserControlSystem\UI\Presenter\OutlineWorkPresenter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\UserControlSystem\UI\Presenter\Presenter.asmdef" />
@@ -689,9 +691,21 @@
       <Project>{5F7D3B7D-FACE-40B2-EC74-827148636838}</Project>
       <Name>Model</Name>
     </ProjectReference>
+    <ProjectReference Include="View.csproj">
+      <Project>{C4AAA381-4B81-4530-F273-867E09F4FCE9}</Project>
+      <Name>View</Name>
+    </ProjectReference>
     <ProjectReference Include="Abstractions.csproj">
       <Project>{648F8A40-8715-264B-C1D7-900D32AE677A}</Project>
       <Name>Abstractions</Name>
+    </ProjectReference>
+    <ProjectReference Include="UserControlSystem.csproj">
+      <Project>{A6F09443-7B70-9D54-1EC6-F248453560D0}</Project>
+      <Name>UserControlSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="Utils.csproj">
+      <Project>{AF83B34A-97C9-0E32-2052-53713EF88933}</Project>
+      <Name>Utils</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -4,58 +4,69 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UserControlSystem;
 
-public sealed class MouseInteractionPresenter : MonoBehaviour
+public  class MouseInteractionPresenter : MonoBehaviour
 {
     [SerializeField] private Camera _camera;
     [SerializeField] private SelectableValue _selectedObject;
     [SerializeField] private EventSystem _eventSystem;
-    private WorkWithOutline curentWorkWithOutline;
+
+    [SerializeField] private Vector3Value _groundClicksRMB;
+    [SerializeField] private Transform _groundTransform;
+    [SerializeField] private AttackableValue _attackableValueRMB;
+
+
+    
+    private Plane _groundPlane;
+
+    private void Start() => _groundPlane = new Plane(_groundTransform.up, 0);
 
     private void Update()
     {
-        Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        if (Input.GetMouseButtonDown(0))
+       
+
+        if (!Input.GetMouseButtonUp(0) && !Input.GetMouseButton(1))
         {
-
-            if (Physics.Raycast(ray, out hit, 100))
-            {
-                
-                var workWithOutline = hit.collider.GetComponent<WorkWithOutline>();
-                if (workWithOutline != null)
-                {
-                    
-                    curentWorkWithOutline?.OutlineDeactivation();
-                    curentWorkWithOutline = workWithOutline;
-                    curentWorkWithOutline.OutlineActivation();
-
-                }
-                else
-                {
-                    curentWorkWithOutline?.OutlineDeactivation();
-                    curentWorkWithOutline = workWithOutline;
-                }
-
-            }
+            return;
         }
-
         if (_eventSystem.IsPointerOverGameObject())
         {
             return;
         }
-
-        if (!Input.GetMouseButtonUp(0))
+        var ray = _camera.ScreenPointToRay(Input.mousePosition);
+        var hits = Physics.RaycastAll(ray);
+        if (Input.GetMouseButtonUp(0))
         {
-            return;
+            if (weHit<ISelectable>(hits, out var selectable))
+            {
+                _selectedObject.SetValue(selectable);
+            }
         }
-        var hits = Physics.RaycastAll(_camera.ScreenPointToRay(Input.mousePosition));
+        else
+        {
+            if (weHit<IAttackable>(hits, out var attackable))
+            {
+                _attackableValueRMB.SetValue(attackable);
+            }
+            else if (_groundPlane.Raycast(ray, out var enter))
+            {
+                _groundClicksRMB.SetValue(ray.origin + ray.direction * enter);
+            }
+        }
+    }
+    private bool weHit<T>(RaycastHit[] hits, out T result) where T : class
+    {
+        result = default;
         if (hits.Length == 0)
         {
-            return;
+            return false;
         }
-        var selectable = hits
-            .Select(hit => hit.collider.GetComponentInParent<ISelectable>())
-            .FirstOrDefault(c => c != null);
-        _selectedObject.SetValue(selectable);
+        result = hits
+        .Select(hit => hit.collider.GetComponentInParent<T>())
+        .Where(c => c != null)
+        .FirstOrDefault();
+        return result != default;
     }
 }
+
+
+    

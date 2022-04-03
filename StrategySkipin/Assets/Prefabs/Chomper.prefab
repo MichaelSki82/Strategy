@@ -1479,6 +1479,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 100
   _icon: {fileID: 21300000, guid: 9908913e928c42d4f9f1891893bbc424, type: 3}
+  _startPoint: {fileID: 3135460837397738589}
 --- !u!114 &3365786825970906951
 MonoBehaviour:
   m_ObjectHideFlags: 0

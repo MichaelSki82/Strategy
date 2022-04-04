@@ -21,6 +21,7 @@ namespace Core
 
         public override void ExecuteSpecificCommand(IProduceUnitCommand command)
         {
+            Debug.Log("Unit");
             Instantiate(command.UnitPrefab, new Vector3(Random.Range(-10, 10), 0,
             Random.Range(-10, 10)), Quaternion.identity, _unitsParent);
         }

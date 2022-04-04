@@ -15,6 +15,7 @@ public class Chomper : MonoBehaviour, ISelectable, IAttackable
     [SerializeField] private float _maxHealth = 100;
     [SerializeField] private Sprite _icon;
     [SerializeField] private Transform _startPoint;
+ 
 
     private float _health = 100;
 

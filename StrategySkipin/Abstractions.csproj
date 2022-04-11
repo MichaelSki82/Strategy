@@ -56,7 +56,6 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Abstractions\ScriptableObjectBase.cs" />
     <Compile Include="Assets\Scripts\Abstractions\Commands\CommandsInterfaces\IStopCommand.cs" />
     <Compile Include="Assets\Scripts\Abstractions\Commands\CommandsInterfaces\IProduceUnitCommand.cs" />
     <Compile Include="Assets\Scripts\Abstractions\IHealthKeeper.cs" />
@@ -65,10 +64,11 @@
     <Compile Include="Assets\Scripts\Abstractions\ISelectable.cs" />
     <Compile Include="Assets\Scripts\Abstractions\Commands\CommandsInterfaces\IPatrolCommand.cs" />
     <Compile Include="Assets\Scripts\Abstractions\Commands\ICommandExecutor.cs" />
+    <Compile Include="Assets\Scripts\Abstractions\NewValueNotifier.cs" />
     <Compile Include="Assets\Scripts\Abstractions\Commands\CommandExecutorBase.cs" />
     <Compile Include="Assets\Scripts\Abstractions\Commands\CommandsInterfaces\IMoveCommand.cs" />
     <Compile Include="Assets\Scripts\Abstractions\Commands\ICommand.cs" />
-    <Compile Include="Assets\Scripts\Abstractions\NewValueNotifier.cs" />
+    <Compile Include="Assets\Scripts\Abstractions\ITimeModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\Abstractions\Abstractions.asmdef" />
@@ -709,6 +709,10 @@
     <ProjectReference Include="Utils.csproj">
       <Project>{AF83B34A-97C9-0E32-2052-53713EF88933}</Project>
       <Name>Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniRx.csproj">
+      <Project>{9C4352B3-2891-254C-2FBA-B9B3A2027C97}</Project>
+      <Name>UniRx</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

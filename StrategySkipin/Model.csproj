@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\UserControlSystem\UI\Model\CommandButtonsModel.cs" />
+    <Compile Include="Assets\Scripts\UserControlSystem\UI\Model\CommandCreators\CancellableCommandCreatorBase.cs" />
     <Compile Include="Assets\Scripts\UserControlSystem\UI\Model\CommandCreators\CommandCreatorBase.cs" />
     <Compile Include="Assets\Scripts\UserControlSystem\UI\Model\AttackableValue.cs" />
     <Compile Include="Assets\Scripts\UserControlSystem\UI\Model\CommandCreators\ProduceUnitCommandCommandCreator.cs" />
@@ -67,7 +68,6 @@
     <Compile Include="Assets\Scripts\UserControlSystem\UI\Model\CommandCreators\PatrolCommandCommandCreator.cs" />
     <Compile Include="Assets\Scripts\UserControlSystem\UI\Model\Vector3Value.cs" />
     <Compile Include="Assets\Scripts\UserControlSystem\UI\Model\UiModelInstaller.cs" />
-    <Compile Include="Assets\Scripts\UserControlSystem\UI\Model\CommandCreators\CancellableCommandCreatorBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\UserControlSystem\UI\Model\Model.asmdef" />
@@ -720,6 +720,10 @@
     <ProjectReference Include="Zenject.csproj">
       <Project>{EA7815B4-278E-6D9B-0754-A96FC4723E04}</Project>
       <Name>Zenject</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniRx.csproj">
+      <Project>{9C4352B3-2891-254C-2FBA-B9B3A2027C97}</Project>
+      <Name>UniRx</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

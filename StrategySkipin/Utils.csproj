@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Utils\ScriptableObjectBase.cs" />
     <Compile Include="Assets\Scripts\Utils\IAwaiter.cs" />
     <Compile Include="Assets\Scripts\Utils\AssetsContext.cs" />
     <Compile Include="Assets\Scripts\Utils\AsyncExtensions.cs" />
@@ -63,6 +64,9 @@
     <Compile Include="Assets\Scripts\Utils\IAwaitable.cs" />
     <Compile Include="Assets\Scripts\Utils\InjectAssetAttribute.cs" />
     <Compile Include="Assets\Scripts\Utils\AwaiterBase.cs" />
+    <Compile Include="Assets\Scripts\Utils\UniRxExtensions.cs" />
+    <Compile Include="Assets\Scripts\Utils\StatelessScriptableObjectValueBase.cs" />
+    <Compile Include="Assets\Scripts\Utils\StatefulScriptableObjectValueBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\Utils\Utils.asmdef" />
@@ -700,6 +704,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="UniRx.csproj">
+      <Project>{9C4352B3-2891-254C-2FBA-B9B3A2027C97}</Project>
+      <Name>UniRx</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

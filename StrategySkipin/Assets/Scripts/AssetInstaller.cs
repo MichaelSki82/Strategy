@@ -1,3 +1,5 @@
+using Abstractions;
+using System;
 using UnityEngine;
 using UserControlSystem;
 using Utils;
@@ -11,6 +13,7 @@ public class AssetInstaller : ScriptableObjectInstaller<AssetInstaller>
     [SerializeField] private AttackableValue _attackableValue;
     [SerializeField] private SelectableValue _selectableValue;
 
+
     public override void InstallBindings()
     {
         Container.Bind<IAwaitable<IAttackable>>()
@@ -18,5 +21,6 @@ public class AssetInstaller : ScriptableObjectInstaller<AssetInstaller>
         Container.Bind<IAwaitable<Vector3>>()
             .FromInstance(_vector3Value);
         Container.BindInstances(_legacyContext, _selectableValue);
+        Container.Bind<IObservable<ISelectable>>().FromInstance(_selectableValue);
     }
 }

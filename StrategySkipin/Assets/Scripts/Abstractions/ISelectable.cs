@@ -2,10 +2,10 @@
 
 namespace Abstractions
 {
-    public interface ISelectable: IHealthKeeper
+    public interface ISelectable: IHealthKeeper, IIconHolder
     {
         
-        Sprite Icon { get; }
+        
         Transform StartPoint { get; }
     }
 }

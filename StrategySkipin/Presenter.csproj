@@ -58,12 +58,13 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\UserControlSystem\UI\Presenter\Outline.cs" />
     <Compile Include="Assets\Scripts\UserControlSystem\UI\Presenter\MouseInteractionPresenter.cs" />
+    <Compile Include="Assets\Scripts\UserControlSystem\UI\Presenter\TopPanelPresenter.cs" />
     <Compile Include="Assets\Scripts\UserControlSystem\UI\Presenter\CommandButtonsPresenter.cs" />
     <Compile Include="Assets\Scripts\UserControlSystem\UI\Presenter\BottomLeftPresenter.cs" />
+    <Compile Include="Assets\Scripts\UserControlSystem\UI\Presenter\MenuPresenter.cs" />
     <Compile Include="Assets\Scripts\UserControlSystem\UI\Presenter\WorkWithOutline.cs" />
     <Compile Include="Assets\Scripts\UserControlSystem\UI\Presenter\OutlineWorkPresenter.cs" />
-    <Compile Include="Assets\Scripts\UserControlSystem\UI\Presenter\TopPanelPresenter.cs" />
-    <Compile Include="Assets\Scripts\UserControlSystem\UI\Presenter\MenuPresenter.cs" />
+    <Compile Include="Assets\Scripts\UserControlSystem\UI\Presenter\BottomCenterPresenter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\UserControlSystem\UI\Presenter\Presenter.asmdef" />

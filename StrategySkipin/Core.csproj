@@ -58,15 +58,19 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Core\CommandExecutors\StopCommandExecutor.cs" />
     <Compile Include="Assets\Scripts\Core\MainBuilding.cs" />
+    <Compile Include="Assets\Scripts\Core\UnitProductionTask.cs" />
     <Compile Include="Assets\Scripts\Core\CommandExecutors\PatrolCommandExecutor.cs" />
     <Compile Include="Assets\Scripts\Core\Chomper.cs" />
     <Compile Include="Assets\Scripts\Core\CoreInstaller.cs" />
     <Compile Include="Assets\Scripts\Core\CommandExecutors\MoveCommandExecutor.cs" />
     <Compile Include="Assets\Scripts\Core\TimeModel.cs" />
     <Compile Include="Assets\Scripts\Core\UnitMovementStop.cs" />
-    <Compile Include="Assets\Scripts\Core\CommandExecutors\AttackCommandExecutor.cs" />
-    <Compile Include="Assets\Scripts\Core\UnitProductionTask.cs" />
     <Compile Include="Assets\Scripts\Core\CommandExecutors\ProduceUnitCommandExecutor.cs" />
+    <Compile Include="Assets\Scripts\Core\CommandExecutors\AttackCommandExecutor.cs" />
+    <Compile Include="Assets\Scripts\Core\CommandExecutors\CommandExecutorBase.cs" />
+    <Compile Include="Assets\Scripts\Core\ChomperCommandsQueue.cs" />
+    <Compile Include="Assets\Scripts\Core\StopCommand.cs" />
+    <Compile Include="Assets\Scripts\Core\MainBuildingCommandQueue.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\Core\Core.asmdef" />

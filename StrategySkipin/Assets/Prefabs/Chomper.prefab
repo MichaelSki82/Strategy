@@ -1382,6 +1382,9 @@ GameObject:
   - component: {fileID: 4652071570944181468}
   - component: {fileID: 5848171090651530221}
   - component: {fileID: 8848226778274097899}
+  - component: {fileID: 1015893330598316682}
+  - component: {fileID: 8303633564530547051}
+  - component: {fileID: 3976887245268144100}
   m_Layer: 0
   m_Name: Chomper
   m_TagString: Untagged
@@ -1508,6 +1511,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _stop: {fileID: 5848171090651530221}
   _animator: {fileID: 3135460837404924863}
+  _stopCommandExecutor: {fileID: 0}
 --- !u!114 &6036101688308128497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1567,6 +1571,47 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1015893330598316682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3135460837397506173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a54be845ca5b2a458741c81721f5979, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8303633564530547051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3135460837397506173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08eca9f7688a0a24685b89133b020c8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scriptableObjectInstallers: []
+  _monoInstallers: []
+  _installerPrefabs: []
+  _autoRun: 1
+  _kernel: {fileID: 0}
+--- !u!114 &3976887245268144100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3135460837397506173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ba174f10058605459445be7be9eee35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3135460837397506175
 GameObject:
   m_ObjectHideFlags: 0

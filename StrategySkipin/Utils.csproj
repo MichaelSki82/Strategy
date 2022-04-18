@@ -58,15 +58,15 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Utils\ScriptableObjectBase.cs" />
     <Compile Include="Assets\Scripts\Utils\IAwaiter.cs" />
+    <Compile Include="Assets\Scripts\Utils\StatefulScriptableObjectValueBase.cs" />
+    <Compile Include="Assets\Scripts\Utils\UniRxExtensions.cs" />
     <Compile Include="Assets\Scripts\Utils\AssetsContext.cs" />
+    <Compile Include="Assets\Scripts\Utils\StatelessScriptableObjectValueBase.cs" />
     <Compile Include="Assets\Scripts\Utils\AsyncExtensions.cs" />
     <Compile Include="Assets\Scripts\Utils\AssetsInjector.cs" />
     <Compile Include="Assets\Scripts\Utils\IAwaitable.cs" />
     <Compile Include="Assets\Scripts\Utils\InjectAssetAttribute.cs" />
     <Compile Include="Assets\Scripts\Utils\AwaiterBase.cs" />
-    <Compile Include="Assets\Scripts\Utils\UniRxExtensions.cs" />
-    <Compile Include="Assets\Scripts\Utils\StatelessScriptableObjectValueBase.cs" />
-    <Compile Include="Assets\Scripts\Utils\StatefulScriptableObjectValueBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\Utils\Utils.asmdef" />

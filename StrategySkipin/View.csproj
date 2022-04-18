@@ -56,9 +56,9 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\UserControlSystem\UI\View\CommandButtonsView.cs" />
     <Compile Include="Assets\Scripts\UserControlSystem\UI\View\BottomCenterView.cs" />
     <Compile Include="Assets\Scripts\UserControlSystem\UI\View\UiViewInstaller.cs" />
+    <Compile Include="Assets\Scripts\UserControlSystem\UI\View\CommandButtonsView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\UserControlSystem\UI\View\View.asmdef" />
@@ -710,6 +710,10 @@
     <ProjectReference Include="Zenject.csproj">
       <Project>{EA7815B4-278E-6D9B-0754-A96FC4723E04}</Project>
       <Name>Zenject</Name>
+    </ProjectReference>
+    <ProjectReference Include="Core.csproj">
+      <Project>{4B29587D-80C6-16B4-7E0A-2A81D2180EDB}</Project>
+      <Name>Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

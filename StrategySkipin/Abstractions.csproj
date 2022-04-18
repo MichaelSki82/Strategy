@@ -62,16 +62,17 @@
     <Compile Include="Assets\Scripts\Abstractions\IHealthKeeper.cs" />
     <Compile Include="Assets\Scripts\Abstractions\IAttackable.cs" />
     <Compile Include="Assets\Scripts\Abstractions\Commands\CommandsInterfaces\IAttackCommand.cs" />
+    <Compile Include="Assets\Scripts\Abstractions\IUnitProducer.cs" />
     <Compile Include="Assets\Scripts\Abstractions\ISelectable.cs" />
+    <Compile Include="Assets\Scripts\Abstractions\IUnitProductionTask.cs" />
     <Compile Include="Assets\Scripts\Abstractions\Commands\CommandsInterfaces\IPatrolCommand.cs" />
     <Compile Include="Assets\Scripts\Abstractions\Commands\ICommandExecutor.cs" />
+    <Compile Include="Assets\Scripts\Abstractions\IIconHolder.cs" />
     <Compile Include="Assets\Scripts\Abstractions\NewValueNotifier.cs" />
-    <Compile Include="Assets\Scripts\Abstractions\Commands\CommandExecutorBase.cs" />
     <Compile Include="Assets\Scripts\Abstractions\Commands\CommandsInterfaces\IMoveCommand.cs" />
     <Compile Include="Assets\Scripts\Abstractions\Commands\ICommand.cs" />
-    <Compile Include="Assets\Scripts\Abstractions\IIconHolder.cs" />
-    <Compile Include="Assets\Scripts\Abstractions\IUnitProductionTask.cs" />
-    <Compile Include="Assets\Scripts\Abstractions\IUnitProducer.cs" />
+    <Compile Include="Assets\Scripts\Abstractions\ICommandsQueue.cs" />
+    <Compile Include="Assets\Scripts\Abstractions\ISetRallyPointCommand.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\Abstractions\Abstractions.asmdef" />

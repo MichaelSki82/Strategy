@@ -65,10 +65,10 @@
     <Compile Include="Assets\Scripts\UserControlSystem\UI\Model\CommandCreators\StopCommandCommandCreator.cs" />
     <Compile Include="Assets\Scripts\UserControlSystem\UI\Model\CommandCreators\MoveCommandCommandCreator.cs" />
     <Compile Include="Assets\Scripts\UserControlSystem\UI\Model\SelectableValue.cs" />
+    <Compile Include="Assets\Scripts\UserControlSystem\UI\Model\BottomCenterModel.cs" />
     <Compile Include="Assets\Scripts\UserControlSystem\UI\Model\CommandCreators\PatrolCommandCommandCreator.cs" />
     <Compile Include="Assets\Scripts\UserControlSystem\UI\Model\Vector3Value.cs" />
     <Compile Include="Assets\Scripts\UserControlSystem\UI\Model\UiModelInstaller.cs" />
-    <Compile Include="Assets\Scripts\UserControlSystem\UI\Model\BottomCenterModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\UserControlSystem\UI\Model\Model.asmdef" />
@@ -725,6 +725,10 @@
     <ProjectReference Include="UniRx.csproj">
       <Project>{9C4352B3-2891-254C-2FBA-B9B3A2027C97}</Project>
       <Name>UniRx</Name>
+    </ProjectReference>
+    <ProjectReference Include="Core.csproj">
+      <Project>{4B29587D-80C6-16B4-7E0A-2A81D2180EDB}</Project>
+      <Name>Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

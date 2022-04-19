@@ -3,7 +3,7 @@ using Abstractions.Commands;
 using Abstractions.Commands.CommandsInterfaces;
 using UnityEngine;
 
-public class Chomper : MonoBehaviour, ISelectable, IAttackable
+public class Chomper : MonoBehaviour, ISelectable, IAttackable, IUnit
 {
     public float Health => _health;
     public float MaxHealth => _maxHealth;

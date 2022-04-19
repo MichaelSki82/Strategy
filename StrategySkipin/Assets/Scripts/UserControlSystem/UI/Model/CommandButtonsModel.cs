@@ -17,6 +17,7 @@ namespace UserControlSystem
         [Inject] private CommandCreatorBase<IAttackCommand> _attacker;
         [Inject] private CommandCreatorBase<IStopCommand> _stopper;
         [Inject] private CommandCreatorBase<IPatrolCommand> _patroller;
+        [Inject] private CommandCreatorBase<ISetRallyPointCommand> _rallyPoint;
 
         private bool _commandIsPending;
 
@@ -34,6 +35,7 @@ ICommandsQueue commandsQueue)
             _stopper.ProcessCommandExecutor(commandExecutor, command => executeCommandWrapper(command, commandsQueue));
             _mover.ProcessCommandExecutor(commandExecutor, command => executeCommandWrapper(command, commandsQueue));
             _patroller.ProcessCommandExecutor(commandExecutor, command => executeCommandWrapper(command, commandsQueue));
+            _rallyPoint.ProcessCommandExecutor(commandExecutor, command => executeCommandWrapper(command, commandsQueue));
         }
 
 
@@ -62,6 +64,7 @@ ICommandsQueue commandsQueue)
             _attacker.ProcessCancel();
             _stopper.ProcessCancel();
             _patroller.ProcessCancel();
+            _rallyPoint.ProcessCancel();
             OnCommandCancel?.Invoke();
         }
     }

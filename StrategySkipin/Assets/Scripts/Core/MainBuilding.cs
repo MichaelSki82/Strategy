@@ -12,6 +12,8 @@ namespace Core
         public Sprite Icon => _icon;
         public Transform StartPoint => _startPoint;
 
+        public Vector3 RallyPoint { get; set; }
+
         [SerializeField] private Transform _unitsParent;
         [SerializeField] private Transform _startPoint;
         [SerializeField] private float _maxHealth = 1000;
@@ -19,12 +21,7 @@ namespace Core
 
         private float _health = 1000;
 
-        //public override  Task ExecuteSpecificCommand(IProduceUnitCommand command)
-        //{
-        //    Debug.Log("Unit");
-        //    //Instantiate(command.UnitPrefab, new Vector3(Random.Range(-10, 10), 0,
-        //    //Random.Range(-10, 10)), Quaternion.identity, _unitsParent);
-        //}
+        
 
     }
 }

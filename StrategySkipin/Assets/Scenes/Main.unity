@@ -1038,6 +1038,17 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 3135460837404924863, guid: da52679614e348249842a52512b296aa, type: 3}
   m_PrefabInstance: {fileID: 3135460836550286771}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1434498523 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7523580148570589069, guid: da52679614e348249842a52512b296aa, type: 3}
+  m_PrefabInstance: {fileID: 3135460836550286771}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434498510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4bd843511ef2d946974e38f2d505513, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1434921454 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3135460837397738589, guid: da52679614e348249842a52512b296aa, type: 3}
@@ -1962,6 +1973,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 501f47b680f7d434b879f29a0b9eb474, type: 2}
+    - target: {fileID: 5848171090651530221, guid: da52679614e348249842a52512b296aa, type: 3}
+      propertyPath: _collisionDetector
+      value: 
+      objectReference: {fileID: 1434498523}
     - target: {fileID: 8303633564530547051, guid: da52679614e348249842a52512b296aa, type: 3}
       propertyPath: _monoInstallers.Array.size
       value: 1

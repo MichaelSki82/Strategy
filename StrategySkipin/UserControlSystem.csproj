@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\UserControlSystem\CommandsRealization\StopCommand.cs" />
     <Compile Include="Assets\Scripts\UserControlSystem\CommandsRealization\ProduceUnitCommand.cs" />
     <Compile Include="Assets\Scripts\UserControlSystem\CommandsRealization\AttackCommand.cs" />
+    <Compile Include="Assets\Scripts\UserControlSystem\CommandsRealization\SetRallyPointCommand.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\UserControlSystem\UserControlSystem.asmdef" />

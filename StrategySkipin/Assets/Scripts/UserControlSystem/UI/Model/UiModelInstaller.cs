@@ -10,9 +10,10 @@ public class UiModelInstaller : MonoInstaller
     [SerializeField] private Sprite _chomperSprite;
     public override void InstallBindings()
     {
-        
-        
 
+
+        Container.Bind<CommandCreatorBase<ISetRallyPointCommand>>()
+           .To<SetRallyPointCommandCreator>().AsTransient();
         Container.Bind<CommandCreatorBase<IProduceUnitCommand>>()
             .To<ProduceUnitCommandCommandCreator>().AsTransient();
         Container.Bind<CommandCreatorBase<IMoveCommand>>()

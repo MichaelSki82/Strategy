@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Abstractions\ITimeModel.cs" />
     <Compile Include="Assets\Scripts\Abstractions\Commands\CommandsInterfaces\IStopCommand.cs" />
+    <Compile Include="Assets\Scripts\Abstractions\ISetRallyPointCommand.cs" />
     <Compile Include="Assets\Scripts\Abstractions\Commands\CommandsInterfaces\IProduceUnitCommand.cs" />
     <Compile Include="Assets\Scripts\Abstractions\IHealthKeeper.cs" />
     <Compile Include="Assets\Scripts\Abstractions\IAttackable.cs" />
@@ -69,10 +70,10 @@
     <Compile Include="Assets\Scripts\Abstractions\Commands\ICommandExecutor.cs" />
     <Compile Include="Assets\Scripts\Abstractions\IIconHolder.cs" />
     <Compile Include="Assets\Scripts\Abstractions\NewValueNotifier.cs" />
+    <Compile Include="Assets\Scripts\Abstractions\ICommandsQueue.cs" />
     <Compile Include="Assets\Scripts\Abstractions\Commands\CommandsInterfaces\IMoveCommand.cs" />
     <Compile Include="Assets\Scripts\Abstractions\Commands\ICommand.cs" />
-    <Compile Include="Assets\Scripts\Abstractions\ICommandsQueue.cs" />
-    <Compile Include="Assets\Scripts\Abstractions\ISetRallyPointCommand.cs" />
+    <Compile Include="Assets\Scripts\Abstractions\IUnit.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\Abstractions\Abstractions.asmdef" />

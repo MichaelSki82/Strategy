@@ -1385,6 +1385,8 @@ GameObject:
   - component: {fileID: 2556030808233473713}
   - component: {fileID: 8235536306319632083}
   - component: {fileID: 7916584584653363652}
+  - component: {fileID: 1923872655522203610}
+  - component: {fileID: 6528304016017538693}
   m_Layer: 0
   m_Name: ChomperFromMainBuilding
   m_TagString: Untagged
@@ -1549,6 +1551,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _agent: {fileID: 8848226778274097899}
+  _collisionDetector: {fileID: 6528304016017538693}
+  _throttleFrames: 60
+  _continuityThreshold: 10
 --- !u!195 &8848226778274097899
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1611,6 +1616,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ba174f10058605459445be7be9eee35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &1923872655522203610
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3135460837397506173}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 14
+  m_CollisionDetection: 0
+--- !u!114 &6528304016017538693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3135460837397506173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4bd843511ef2d946974e38f2d505513, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3135460837397506175

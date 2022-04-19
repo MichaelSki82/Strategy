@@ -67,10 +67,12 @@
     <Compile Include="Assets\Scripts\Core\UnitMovementStop.cs" />
     <Compile Include="Assets\Scripts\Core\CommandExecutors\ProduceUnitCommandExecutor.cs" />
     <Compile Include="Assets\Scripts\Core\CommandExecutors\AttackCommandExecutor.cs" />
-    <Compile Include="Assets\Scripts\Core\CommandExecutors\CommandExecutorBase.cs" />
-    <Compile Include="Assets\Scripts\Core\ChomperCommandsQueue.cs" />
     <Compile Include="Assets\Scripts\Core\StopCommand.cs" />
     <Compile Include="Assets\Scripts\Core\MainBuildingCommandQueue.cs" />
+    <Compile Include="Assets\Scripts\Core\CommandExecutors\CommandExecutorBase.cs" />
+    <Compile Include="Assets\Scripts\Core\ChomperCommandsQueue.cs" />
+    <Compile Include="Assets\Scripts\Core\CommandExecutors\SetRallyPointCommandExecutor.cs" />
+    <Compile Include="Assets\Scripts\Core\CommandExecutors\MoveCommand.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\Core\Core.asmdef" />

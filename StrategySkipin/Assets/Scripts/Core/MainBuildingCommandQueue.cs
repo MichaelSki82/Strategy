@@ -9,12 +9,13 @@ namespace Core
     public class MainBuildingCommandQueue : MonoBehaviour, ICommandsQueue
     {
         [Inject] CommandExecutorBase<IProduceUnitCommand> _produceUnitCommandExecutor;
-       // [Inject] CommandExecutorBase<ISetRallyPointCommand> _setRally;
+        [Inject] CommandExecutorBase<ISetRallyPointCommand> _rallyPoint;
 
         public void Clear() { }
         public async void EnqueueCommand(object command)
         {
             await _produceUnitCommandExecutor.TryExecuteCommand(command);
+            await _rallyPoint.TryExecuteCommand(command);
         }
 
     }

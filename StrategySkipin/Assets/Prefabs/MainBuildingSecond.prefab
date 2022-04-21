@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 4538322241432332682}
   - component: {fileID: 268304830998027116}
   m_Layer: 0
-  m_Name: MainBuilding
+  m_Name: MainBuildingSecond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -371,7 +371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2473885c9a360cc4f9c560f163f15d66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _factionId: 1
+  _factionId: 2
 --- !u!1 &1392407185620840911
 GameObject:
   m_ObjectHideFlags: 0

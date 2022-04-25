@@ -3,8 +3,8 @@ using Abstractions.Commands;
 using Abstractions.Commands.CommandsInterfaces;
 using UnityEngine;
 
-public class Chomper : MonoBehaviour, ISelectable, IAttackable, IUnit, IDamageDealer
-   
+public class Chomper : MonoBehaviour, ISelectable, IAttackable, IUnit, IDamageDealer, IAutomaticAttacker
+
 {
     [SerializeField] private float _maxHealth = 100;
     [SerializeField] private Sprite _icon;
@@ -12,6 +12,9 @@ public class Chomper : MonoBehaviour, ISelectable, IAttackable, IUnit, IDamageDe
     [SerializeField] private Animator _animator;
     [SerializeField] private StopCommandExecutor _stopCommand;
     [SerializeField] private int _damage = 25;
+    [SerializeField] private float _visionRadius = 8f;
+
+    public float VisionRadius => _visionRadius;
 
     public int Damage => _damage;
     public float Health => _health;

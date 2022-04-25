@@ -1,6 +1,6 @@
-using System;
 using Abstractions.Commands;
 using Abstractions.Commands.CommandsInterfaces;
+using System;
 using UnityEngine;
 using Zenject;
 
@@ -21,8 +21,7 @@ namespace UserControlSystem
 
         private bool _commandIsPending;
 
-        public void OnCommandButtonClicked(ICommandExecutor commandExecutor,
-ICommandsQueue commandsQueue)
+        public void OnCommandButtonClicked(ICommandExecutor commandExecutor,ICommandsQueue commandsQueue)
         {
             if (_commandIsPending)
             {

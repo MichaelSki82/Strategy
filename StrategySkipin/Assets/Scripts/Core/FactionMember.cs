@@ -1,6 +1,7 @@
 using System.Collections.Generic;
-using UnityEngine;
 using System.Linq;
+using UnityEngine;
+
 public class FactionMember : MonoBehaviour, IFactionMember
 {
     public static int FactionsCount

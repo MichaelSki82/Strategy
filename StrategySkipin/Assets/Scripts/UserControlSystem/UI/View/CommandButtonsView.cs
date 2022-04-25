@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Abstractions.Commands;
+using Abstractions.Commands.CommandsInterfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Abstractions.Commands;
-using Abstractions.Commands.CommandsInterfaces;
 using UnityEngine;
 using UnityEngine.UI;
 

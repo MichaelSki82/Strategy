@@ -4,5 +4,6 @@ namespace Abstractions.Commands
     {
         void EnqueueCommand(object command);
         void Clear();
+        ICommand CurrentCommand { get; }
     }
 }

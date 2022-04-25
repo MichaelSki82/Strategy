@@ -10,9 +10,10 @@ namespace Core
     {
         [Inject] CommandExecutorBase<IProduceUnitCommand> _produceUnitCommandExecutor;
         [Inject] CommandExecutorBase<ISetRallyPointCommand> _rallyPoint;
+        public ICommand CurrentCommand => default;
 
         public void Clear() { }
-        public async void EnqueueCommand(object command)
+        public async void EnqueueCommand (object command)
         {
             await _produceUnitCommandExecutor.TryExecuteCommand(command);
             await _rallyPoint.TryExecuteCommand(command);
